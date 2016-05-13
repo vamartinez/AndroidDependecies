@@ -13,7 +13,7 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intet = getIntent();
+        Intent intent = getIntent();
         Joker myJoker = new Joker();
         Toast.makeText(this, myJoker.getJoke(), Toast.LENGTH_SHORT).show();
         finish();

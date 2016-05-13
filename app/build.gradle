@@ -2,7 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     packagingOptions {
-        exclude 'gen_exact_english.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+
     }
 
     compileSdkVersion 23
@@ -13,6 +15,7 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -38,7 +41,10 @@ dependencies {
     // Added for AdMob
     compile project(':javajokes')
     compile project(':showjokes')
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile project(path: ':backendJoke', configuration: 'android-endpoints')
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
     compile 'com.google.android.gms:play-services:8.4.0'
-    compile project(path: ':jokeGCM', configuration: 'android-endpoints')
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
 }

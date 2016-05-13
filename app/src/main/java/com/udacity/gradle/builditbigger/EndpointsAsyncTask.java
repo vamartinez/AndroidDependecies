@@ -6,22 +6,21 @@ import android.support.v4.util.Pair;
 import android.widget.Toast;
 
 
-import com.example.vic.myapplication.jokeGCM.JokeEndpoint;
-import com.example.vic.myapplication.jokeGCM.MyEndpoint;
+
 
 /**
  * Created by vic on 11/05/2016.
  */
 class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
-    private static MyEndpoint myApiService = null;
+   // private static JokerEndpoint myApiService = null;
     private Context context;
 
     @Override
     protected String doInBackground(Pair<Context, String>... params) {
-        if (myApiService == null) {  // Only do this once
+      //  if (myApiService == null) {  // Only do this once
 
-            JokeEndpoint joker = new JokeEndpoint();
-            joker.getJoke();
+         //   JokeEndpoint joker = new JokeEndpoint();
+       //     joker.getJoke();
             return "hi!";
            /*
             MyEndpoint.Builder builder = new MyEndpoint.Builder(AndroidHttp.newCompatibleTransport(),
@@ -50,8 +49,8 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
             return e.getMessage();
         }
         */
-        }
-        return "";
+    //    }
+      //  return "";
     }
 
 

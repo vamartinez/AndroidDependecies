@@ -9,8 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/backendJoke" />
             <option value="$PROJECT_DIR$/javajokes" />
-            <option value="$PROJECT_DIR$/jokeGCM" />
             <option value="$PROJECT_DIR$/showjokes" />
           </set>
         </option>
@@ -18,8 +18,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/backendJoke" />
             <option value="$PROJECT_DIR$/javajokes" />
-            <option value="$PROJECT_DIR$/jokeGCM" />
             <option value="$PROJECT_DIR$/showjokes" />
           </set>
         </option>
