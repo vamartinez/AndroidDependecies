@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidDependecies.iml" filepath="$PROJECT_DIR$/AndroidDependecies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backendJoke/backendJoke.iml" filepath="$PROJECT_DIR$/backendJoke/backendJoke.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javajokes/javajokes.iml" filepath="$PROJECT_DIR$/javajokes/javajokes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/showjokes/showjokes.iml" filepath="$PROJECT_DIR$/showjokes/showjokes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backendJoke/backendJoke.iml" filepath="$PROJECT_DIR$/.idea/modules/backendJoke/backendJoke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javajokes/javajokes.iml" filepath="$PROJECT_DIR$/.idea/modules/javajokes/javajokes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jokes.iml" filepath="$PROJECT_DIR$/.idea/modules/jokes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/showjokes/showjokes.iml" filepath="$PROJECT_DIR$/.idea/modules/showjokes/showjokes.iml" />
     </modules>
   </component>
 </project>

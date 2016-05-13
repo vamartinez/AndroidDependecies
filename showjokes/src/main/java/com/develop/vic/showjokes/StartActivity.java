@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.Joker;
+import com.example.JokerJavaGenerator;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -14,8 +14,8 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
-        Joker myJoker = new Joker();
-        Toast.makeText(this, myJoker.getJoke(), Toast.LENGTH_SHORT).show();
+        JokerJavaGenerator myJokerJavaGenerator = new JokerJavaGenerator();
+        Toast.makeText(this, intent.getExtras().getString("JOKE"), Toast.LENGTH_SHORT).show();
         finish();
     }
 }

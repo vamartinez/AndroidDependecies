@@ -35,14 +35,12 @@ public class JokerEndpoint {
     public Joker getJoker(@Named("id") Long id) {
         // TODO: Implement this function
         logger.info("Calling getJoker method");
-        return null;
+        return new Joker();
     }
 
     @ApiMethod(name = "getJoke")
     public Joker getJoke() {
-        // TODO: Implement this function
-        logger.info("Calling getJoker method");
-        return null;
+        return new Joker();
     }
 
     /**

@@ -2,14 +2,23 @@ package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v4.util.Pair;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.develop.vic.showjokes.StartActivity;
+import com.example.victor.myapplication.backend.jokerApi.JokerApi;
+import com.google.api.client.extensions.android.http.AndroidHttp;
+import com.google.api.client.extensions.android.json.AndroidJsonFactory;
+import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
+import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
+
+import java.io.IOException;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -44,9 +53,15 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void tellJoke(View view){
-        Intent myIntent = new Intent(this, StartActivity.class);
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Manfred"));
-      //  startActivity(myIntent);
+        new EndpointsAsyncTask(new EndpointsAsyncTask.AsyncResponse() {
+            @Override
+            public void processFinish(String output) {
+                Intent myIntent = new Intent(getApplicationContext(), StartActivity.class);
+                myIntent.putExtra("JOKE",output);
+                startActivity(myIntent);
+            }
+        }).execute(this);
+
     }
 
 
